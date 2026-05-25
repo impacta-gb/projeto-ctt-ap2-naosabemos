@@ -1,0 +1,6 @@
+site_name = "Documentação da Linguagem Go"
+site_description = "Guia de estudos e referência para a linguagem Go"
+
+nav = [
+  { "Introdução" = "index.md" }
+]

@@ -2,11 +2,11 @@ name: Documentação Zensical CI/CD
 
 on:
   push:
-    [cite_start]branches: [ "main" ] 
+    branches: [ "main" ]
   pull_request:
-    [cite_start]branches: [ "main" ] 
+    branches: [ "main" ]
   schedule:
-    - [cite_start]cron: '0 0 * * 0'  
+    - cron: '0 0 * * 0' 
 
 jobs:
   build_site:

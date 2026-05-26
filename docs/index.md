@@ -18,4 +18,4 @@ Após o término, verifique se a instalação foi bem-sucedida:
 go version
 
 !!! info "NOTA"
-Recomenda-se utilizar o VS Code com a extensão oficial da linguagem Go para ter suporte a auto-complete e formatação automática no seu ambiente de desenvolvimento.
+    Recomenda-se utilizar o VS Code com a extensão oficial da linguagem Go para ter suporte a auto-complete e formatação automática no seu ambiente de desenvolvimento.

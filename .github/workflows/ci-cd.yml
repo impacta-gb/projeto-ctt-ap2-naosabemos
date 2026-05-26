@@ -17,15 +17,15 @@ jobs:
         [cite_start]python-version: ["3.10", "3.11"]
 
     steps:
-      - name: 📥 Checkout do código
+      - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: 🐍 Configurar Python ${{ matrix.python-version }}
+      - name: Configurar Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: ⚡ Cache das dependências do Pip
+      - name: Cache das dependências do Pip
         uses: actions/cache@v4
         with:
           [cite_start]path: ~/.cache/pip 
@@ -33,13 +33,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: 📦 Instalar dependências
+      - name: Instalar dependências
         run: pip install -r requirements.txt 
 
-      - name: 🏗️ Fazer o Build do Site Zensical
+      - name: Fazer o Build do Site Zensical
         run: zensical Build
 
-      - name: 📤 Fazer Upload do Artefato (HTML)
+      - name: Fazer Upload do Artefato (HTML)
         uses: actions/upload-artifact@v4
         with:
           name: site-docs-python-${{ matrix.python-version }}

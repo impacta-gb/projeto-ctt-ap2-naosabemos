@@ -21,7 +21,7 @@ for i := 0; i < 5; i++ {
 }
 
 !!! info "CURIOSIDADE"
-  Para criar um laço infinito em Go (o equivalente a um while(true)), basta usar a palavra-chave for sem nenhuma condição!
+    Para criar um laço infinito em Go (o equivalente a um while(true)), basta usar a palavra-chave for sem nenhuma condição!
 
 Estrutura switch
 O switch em Go é inteligente e não precisa da palavra-chave break ao final de cada caso.

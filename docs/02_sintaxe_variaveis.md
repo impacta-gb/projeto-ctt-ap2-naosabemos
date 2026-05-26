@@ -22,4 +22,5 @@ func main() {
 }
 
 !!! warning "ATENÇÃO"
-    Na linguagem Go, toda variável declarada DEVE ser utilizada. Se você declarar uma variável e não usá-la no código, o compilador gerará um erro e impedirá a execução do programa!
+
+    Na linguagem Go, **toda variável declarada DEVE ser utilizada**. Se você declarar uma variável e não usá-la no código, o compilador gerará um erro e impedirá a execução do programa!

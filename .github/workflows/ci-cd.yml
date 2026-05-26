@@ -44,10 +44,10 @@ jobs:
         with:
           name: site-docs-python-${{ matrix.python-version }}
           path: site/
-
+ 
   deploy_site:
-    [cite_start]needs: build_site 
-    if: github.event_name == 'push' || github.event_name == 'schedule' 
+    needs: build_site
+    if: github.event_name == 'push' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     
     steps:

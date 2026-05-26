@@ -29,3 +29,10 @@ Se quiser clonar e visualizar o site na sua máquina, siga os passos:
 2. Clone o repositório:
    ```bash
    git clone [https://github.com/gabriel2501236/projeto-ctt-ap2-naosabemos.git](https://github.com/gabriel2501236/projeto-ctt-ap2-naosabemos.git)
+
+---
+
+## ⚙ Automações CI/CD
+
+Nosso workflow automatiza o teste, a construção e a publicação do site de documentação. Ele usa cache e matriz de testes para garantir velocidade e estabilidade, além de regras de segurança que impedem o deploy acidental durante a fase de revisão de código (Pull Requests).
+   

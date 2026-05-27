@@ -16,19 +16,19 @@
         
       
       
-      <link rel="icon" href="./assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="zensical-0.0.43">
     
     
       
-        <title>1. Introdução e Instalação do Go - Documentação da Linguagem Go</title>
+        <title>5. Structs e Métodos - Documentação da Linguagem Go</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="./assets/stylesheets/modern/main.fba56155.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
       
       
 
@@ -47,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-introducao-e-instalacao-do-go" class="md-skip">
+        <a href="#5-structs-e-metodos" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +81,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="" title="Documentação da Linguagem Go" class="md-header__button md-logo" aria-label="Documentação da Linguagem Go" data-md-component="logo">
+    <a href="./.." title="Documentação da Linguagem Go" class="md-header__button md-logo" aria-label="Documentação da Linguagem Go" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. Introdução e Instalação do Go
+              5. Structs e Métodos
             
           </span>
         </div>
@@ -154,7 +154,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="" title="Documentação da Linguagem Go" class="md-nav__button md-logo" aria-label="Documentação da Linguagem Go" data-md-component="logo">
+    <a href="./.." title="Documentação da Linguagem Go" class="md-nav__button md-logo" aria-label="Documentação da Linguagem Go" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
@@ -169,36 +169,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Introdução
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
         
   
   
@@ -213,38 +187,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#como-instalar-o-go" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Como Instalar o Go
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -290,10 +232,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-o-go" class="md-nav__link">
+  <a href="#definindo-uma-struct" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Como Instalar o Go
+        Definindo uma Struct
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definindo-metodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Definindo Métodos
       </span>
     </span>
   </a>
@@ -315,22 +268,24 @@
                 
                   
 
-<h1 id="1-introducao-e-instalacao-do-go">1. Introdução e Instalação do Go<a class="headerlink" href="#1-introducao-e-instalacao-do-go" title="Permanent link">&para;</a></h1>
-<p>Go (ou Golang) é uma linguagem de programação de código aberto desenvolvida pelo Google, focada em simplicidade, eficiência e concorrência nativa.</p>
-<h2 id="como-instalar-o-go">Como Instalar o Go<a class="headerlink" href="#como-instalar-o-go" title="Permanent link">&para;</a></h2>
-<p>Para instalar o Go no seu ambiente Linux/Ubuntu (WSL), siga os comandos abaixo no terminal:</p>
-<p>```bash</p>
-<h1 id="atualize-a-lista-de-pacotes">Atualize a lista de pacotes<a class="headerlink" href="#atualize-a-lista-de-pacotes" title="Permanent link">&para;</a></h1>
-<p>sudo apt update</p>
-<h1 id="instale-o-compilador-do-go">Instale o compilador do Go<a class="headerlink" href="#instale-o-compilador-do-go" title="Permanent link">&para;</a></h1>
-<p>sudo apt install golang-go</p>
-<p>Verificando a Instalação
-Após o término, verifique se a instalação foi bem-sucedida:
-go version</p>
-<div class="admonition info">
-<p class="admonition-title">NOTA</p>
-<p>Recomenda-se utilizar o VS Code com a extensão oficial da linguagem Go para ter suporte a auto-complete e formatação automática no seu ambiente de desenvolvimento.</p>
-</div>
+<h1 id="5-structs-e-metodos">5. Structs e Métodos<a class="headerlink" href="#5-structs-e-metodos" title="Permanent link">&para;</a></h1>
+<p>Go não é uma linguagem totalmente orientada a objetos (não possui herança clássica), mas utiliza <code>structs</code> e <code>métodos</code> para alcançar encapsulamento e organização de dados.</p>
+<h2 id="definindo-uma-struct">Definindo uma Struct<a class="headerlink" href="#definindo-uma-struct" title="Permanent link">&para;</a></h2>
+<p>Uma <code>struct</code> é uma coleção de campos digitados.</p>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">type</span><span class="w"> </span><span class="nx">Aluno</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nx">Nome</span><span class="w">  </span><span class="kt">string</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">Idade</span><span class="w"> </span><span class="kt">int</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">Nota</span><span class="w">  </span><span class="kt">float64</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="definindo-metodos">Definindo Métodos<a class="headerlink" href="#definindo-metodos" title="Permanent link">&para;</a></h2>
+<p>Um método é uma função que possui um argumento "receptor" especial associado a uma struct.</p>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// O receptor (a Aluno) conecta a função diretamente à struct</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="nx">Aluno</span><span class="p">)</span><span class="w"> </span><span class="nx">ExibirPerfil</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Aluno: %s | Idade: %d\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">Nome</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">Idade</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
 
 
 
@@ -382,10 +337,10 @@ go version</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":".","features":[],"search":"./assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":[],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="./assets/javascripts/bundle.6e5f0216.min.js"></script>
+      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
       
     
   </body>

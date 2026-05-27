@@ -2,5 +2,9 @@ site_name = "Documentação da Linguagem Go"
 site_description = "Guia de estudos e referência para a linguagem Go"
 
 nav = [
-  { "Introdução" = "index.md" }
+    { "1. Introdução" = "index.md" },
+    { "2. Sintaxe Básica" = "02_sintaxe_variaveis.md" },
+    { "3. Estruturas de Controle" = "03_estruturas_controle.md" },
+    { "4. Arrays, Slices e Maps" = "04_arrays_slices_maps.md" },
+    { "5. Structs e Métodos" = "05_structs_metodos.md" }
 ]

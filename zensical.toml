@@ -1,6 +1,9 @@
 site_name = "Documentação da Linguagem Go"
 site_description = "Guia de estudos e referência para a linguagem Go"
 
-nav = [
-  { "Introdução" = "index.md" }
-]
+nav:
+  - Introdução: index.md
+  - 2. Sintaxe Básica e Variáveis: 02_sintaxe_variaveis.md
+  - 3. Estruturas de Controle: 03_estruturas_controle.md
+  - 4. Arrays, Slices e Maps
+  - 5. 5. Structs e Métodos

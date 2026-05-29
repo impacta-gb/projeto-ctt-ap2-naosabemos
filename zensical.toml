@@ -6,5 +6,10 @@ nav = [
     { "2. Sintaxe Básica" = "02_sintaxe_variaveis.md" },
     { "3. Estruturas de Controle" = "03_estruturas_controle.md" },
     { "4. Arrays, Slices e Maps" = "04_arrays_slices_maps.md" },
-    { "5. Structs e Métodos" = "05_structs_metodos.md" }
+    { "5. Structs e Métodos" = "05_structs_metodos.md" },
+    { "6. Tratamento de Erros" = "06_tratamento_erros.md" },
+    { "7. Goroutines" = "07_goroutines.md" },
+    { "8. Channels" = "08_channels.md" },
+    { "9. Gerenciamento de Pacotes" = "09_gerenciamento_pacotes.md" },
+    { "10. Testes Automatizados" = "10_testes_automatizados.md" }
 ]

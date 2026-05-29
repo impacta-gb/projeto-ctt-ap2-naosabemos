@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../03_estruturas_controle/">
+        <link rel="prev" href="../08_channels/">
       
       
-        <link rel="next" href="../05_structs_metodos/">
+        <link rel="next" href="../10_testes_automatizados/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>4. Arrays, Slices e Maps - Documentação da Linguagem Go</title>
+        <title>9. Gerenciamento de Pacotes (Go Modules) - Documentação da Linguagem Go</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-arrays-slices-e-maps" class="md-skip">
+        <a href="#9-gerenciamento-de-pacotes-go-modules" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Arrays, Slices e Maps
+              9. Gerenciamento de Pacotes (Go Modules)
             
           </span>
         </div>
@@ -251,36 +251,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  4. Arrays, Slices e Maps
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../04_arrays_slices_maps/" class="md-nav__link">
         
   
   
@@ -295,60 +269,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#arrays" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Arrays
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slices" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Slices
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maps
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -461,10 +381,36 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../09_gerenciamento_pacotes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  9. Gerenciamento de Pacotes
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -479,6 +425,38 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-principais-do-go-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Comandos Principais do Go Modules
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -550,32 +528,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arrays" class="md-nav__link">
+  <a href="#comandos-principais-do-go-modules" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Arrays
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slices" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Slices
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maps
+        Comandos Principais do Go Modules
       </span>
     </span>
   </a>
@@ -597,28 +553,31 @@
                 
                   
 
-<h1 id="4-arrays-slices-e-maps">4. Arrays, Slices e Maps<a class="headerlink" href="#4-arrays-slices-e-maps" title="Permanent link">&para;</a></h1>
-<p>Essas são as estruturas de dados fundamentais em Go para armazenar coleções de elementos.</p>
-<h2 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h2>
-<p>Possuem tamanho fixo que deve ser definido no momento da sua criação.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">numeros</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">numeros</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">10</span>
-</span></code></pre></div>
-<h2 id="slices">Slices<a class="headerlink" href="#slices" title="Permanent link">&para;</a></h2>
-<p>São segmentos dinâmicos e muito mais comuns no dia a dia do que os arrays.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Criando um slice com valores iniciais</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">sabores</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;Calabresa&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Mussarela&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Frango&quot;</span><span class="p">}</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// Adicionando novos elementos dinamicamente</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nx">sabores</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">append</span><span class="p">(</span><span class="nx">sabores</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Portuguesa&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="maps">Maps<a class="headerlink" href="#maps" title="Permanent link">&para;</a></h2>
-<p>São coleções indexadas por chaves (estruturas do tipo Chave-Valor).</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Criando um mapa de notas por nome do aluno</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">notas</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">float64</span><span class="p">)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">notas</span><span class="p">[</span><span class="s">&quot;Gabriel&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">9.5</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">notas</span><span class="p">[</span><span class="s">&quot;Refboni&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">10.0</span>
-</span></code></pre></div>
+<h1 id="9-gerenciamento-de-pacotes-go-modules">9. Gerenciamento de Pacotes (Go Modules)<a class="headerlink" href="#9-gerenciamento-de-pacotes-go-modules" title="Permanent link">&para;</a></h1>
+<p>O Go possui um gerenciador de dependências nativo chamado Go Modules, eliminando a necessidade antiga de configurar variáveis complexas no sistema operacional.</p>
+<h2 id="comandos-principais-do-go-modules">Comandos Principais do Go Modules<a class="headerlink" href="#comandos-principais-do-go-modules" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Comando</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>go mod init &lt;nome&gt;</code></td>
+<td style="text-align: left;">Inicializa um novo módulo de projeto e cria o arquivo <code>go.mod</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>go get &lt;pacote&gt;</code></td>
+<td style="text-align: left;">Faz o download de uma dependência externa e a adiciona ao projeto.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>go mod tidy</code></td>
+<td style="text-align: left;">Remove dependências não utilizadas e adiciona as que estão faltando automaticamente.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 
 

@@ -11,10 +11,8 @@
       
       
       
-        <link rel="prev" href="../03_estruturas_controle/">
+        <link rel="prev" href="../09_gerenciamento_pacotes/">
       
-      
-        <link rel="next" href="../05_structs_metodos/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>4. Arrays, Slices e Maps - Documentação da Linguagem Go</title>
+        <title>10. Testes Automatizados em Go - Documentação da Linguagem Go</title>
       
     
     
@@ -69,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-arrays-slices-e-maps" class="md-skip">
+        <a href="#10-testes-automatizados-em-go" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Arrays, Slices e Maps
+              10. Testes Automatizados em Go
             
           </span>
         </div>
@@ -251,36 +249,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  4. Arrays, Slices e Maps
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../04_arrays_slices_maps/" class="md-nav__link">
         
   
   
@@ -295,60 +267,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#arrays" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Arrays
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slices" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Slices
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maps
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -487,10 +405,36 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../10_testes_automatizados/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  10. Testes Automatizados
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -505,6 +449,66 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regras-para-criar-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Regras para Criar Testes
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-codigo-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Exemplo de Código de Teste
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo de Código de Teste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-executar-os-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Como Executar os Testes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -550,10 +554,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arrays" class="md-nav__link">
+  <a href="#regras-para-criar-testes" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Arrays
+        Regras para Criar Testes
       </span>
     </span>
   </a>
@@ -561,24 +565,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#slices" class="md-nav__link">
+  <a href="#exemplo-de-codigo-de-teste" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Slices
+        Exemplo de Código de Teste
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo de Código de Teste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-executar-os-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Como Executar os Testes
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#maps" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maps
-      </span>
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -597,29 +607,31 @@
                 
                   
 
-<h1 id="4-arrays-slices-e-maps">4. Arrays, Slices e Maps<a class="headerlink" href="#4-arrays-slices-e-maps" title="Permanent link">&para;</a></h1>
-<p>Essas são as estruturas de dados fundamentais em Go para armazenar coleções de elementos.</p>
-<h2 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h2>
-<p>Possuem tamanho fixo que deve ser definido no momento da sua criação.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">numeros</span><span class="w"> </span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="kt">int</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">numeros</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">10</span>
+<h1 id="10-testes-automatizados-em-go">10. Testes Automatizados em Go<a class="headerlink" href="#10-testes-automatizados-em-go" title="Permanent link">&para;</a></h1>
+<p>O suporte para testes automatizados é embutido na ferramenta padrão do Go, sem a necessidade de instalar frameworks de terceiros.</p>
+<h2 id="regras-para-criar-testes">Regras para Criar Testes<a class="headerlink" href="#regras-para-criar-testes" title="Permanent link">&para;</a></h2>
+<ol>
+<li>O arquivo de teste deve obrigatoriamente terminar com <code>_test.go</code> (ex: <code>calculadora_test.go</code>).</li>
+<li>A função de teste deve começar com a palavra <code>Test</code> em maiúsculo e receber o ponteiro <code>(t *testing.T)</code>.</li>
+</ol>
+<h2 id="exemplo-de-codigo-de-teste">Exemplo de Código de Teste<a class="headerlink" href="#exemplo-de-codigo-de-teste" title="Permanent link">&para;</a></h2>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;testing&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">func</span><span class="w"> </span><span class="nx">TestSoma</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nx">resultadoEsperado</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">5</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nx">resultadoObtido</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">Soma</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">resultadoObtido</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nx">resultadoEsperado</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nx">t</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;Erro no teste! Esperava %d, mas obtive %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">resultadoEsperado</span><span class="p">,</span><span class="w"> </span><span class="nx">resultadoObtido</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="slices">Slices<a class="headerlink" href="#slices" title="Permanent link">&para;</a></h2>
-<p>São segmentos dinâmicos e muito mais comuns no dia a dia do que os arrays.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Criando um slice com valores iniciais</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">sabores</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">[]</span><span class="kt">string</span><span class="p">{</span><span class="s">&quot;Calabresa&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Mussarela&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Frango&quot;</span><span class="p">}</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// Adicionando novos elementos dinamicamente</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nx">sabores</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">append</span><span class="p">(</span><span class="nx">sabores</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Portuguesa&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="maps">Maps<a class="headerlink" href="#maps" title="Permanent link">&para;</a></h2>
-<p>São coleções indexadas por chaves (estruturas do tipo Chave-Valor).</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Criando um mapa de notas por nome do aluno</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">notas</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">float64</span><span class="p">)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">notas</span><span class="p">[</span><span class="s">&quot;Gabriel&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">9.5</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">notas</span><span class="p">[</span><span class="s">&quot;Refboni&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">10.0</span>
-</span></code></pre></div>
-<hr />
+<h3 id="como-executar-os-testes">Como Executar os Testes<a class="headerlink" href="#como-executar-os-testes" title="Permanent link">&para;</a></h3>
+<p>Para rodar a bateria de testes automatizados do seu projeto, basta executar no terminal:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>go<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-v
+</span></code></pre></div></p>
 
 
 
